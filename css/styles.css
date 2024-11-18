@@ -7,7 +7,9 @@
     --color-secondary-dark: #A28268;
 }
 
-*{
+*,
+*::before,
+*::after{
     box-sizing: border-box;
 }
 
@@ -30,6 +32,9 @@ address{
 }
 h1, h2, h3, h4, h5, h6, p{
     margin-top: 0;
+}
+a{
+    display: inline-block;
 }
 
 .section{
@@ -174,9 +179,8 @@ h1, h2, h3, h4, h5, h6, p{
 }
 /* chefs */
 .chefs-title{
-     max-width: 520px;
      margin: 0 auto 80px;
-
+     position: relative;
 }
 .chef-title{
     font-size: 40px;
@@ -186,15 +190,35 @@ h1, h2, h3, h4, h5, h6, p{
 .chefs-title::after,
 .chefs-title::before{
     width: 352px;
-    border: 2px solid var(--color-brand-white);
+    border: 2px solid var(--color-secondary-dark);
     display: block;
     content: '';
+}
+.chefs-title::after{
+    position: absolute;
+    right: 0;
+    bottom: 24px;
+}
+.chefs-title::before{
+    position: absolute;
+    left: 0;
+    bottom: 24px;
 }
 .chef-image{
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 }
-
+.chefs-list{
+    display: flex;
+    gap: 30px;
+}
+.chefs-item{
+    flex-basis: calc((100% - 30px)/2);
+}
+.chef-card{
+    display: flex;
+    gap: 30px;
+}
 /* formats */
 .format-title{
     font-size: 24px;
@@ -225,6 +249,11 @@ h1, h2, h3, h4, h5, h6, p{
 .formats-item{
     flex-basis: calc((100% - 40px) / 3);
 }
+.formats-container{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
 /* carousele */
 .carousele-button{
     display: flex;
@@ -237,6 +266,7 @@ h1, h2, h3, h4, h5, h6, p{
     border: 1px solid var(--color-primary-dark);
     padding: 0;
     cursor: pointer;
+    flex-shrink: 0;
 }
 .carousele-arrow{
     fill: var(--color-primary-dark);
@@ -251,6 +281,18 @@ h1, h2, h3, h4, h5, h6, p{
 .contact-title{
     margin-bottom: 16px;
 }
+.contact-container{
+    display: flex;
+    gap: 32px;
+}
+.contact-map{
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 16px;
+}
+.contact-section{
+    padding-bottom: 96px;
+}
 /* Footer */
 .footer{
     background-image: url(../images/footer-bg.png);
@@ -258,6 +300,8 @@ h1, h2, h3, h4, h5, h6, p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 32px 0;
+    position: relative;
 }
 .adress-link{
     font-size: 16px;
@@ -276,4 +320,76 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .address-icon:hover {
     fill: var(--color-brand-light);
+}
+.footer-container{
+    display: flex;
+    gap: 20px;
+}
+.footer-nav{
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+.footer-address{
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+}
+.footer-logo,
+.footer-menu{
+    flex-grow: 1;
+}
+.address-list,
+.address-info{
+    flex-grow: 1;
+}
+/* Footer decor */
+.footer::before{
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 120px;
+    background-image: url('../images/decor-bread-small.png');
+    content: '';
+    left: 0;
+}
+.footer::after{
+    width: 380px;
+    height: 190px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    right: 0;
+    position: absolute;
+    background-image: url('../images/decor-bread-large.png');
+    content: '';
+}
+/* Modal window */
+.backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal{
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+}
+.modal-btn-close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
