@@ -1,0 +1,33 @@
+// базовые стили + переменные
+@import './utils/variables';
+@import './base';
+// утилиты(кнопки и тд)
+@import './utils/utils';
+@import './components/buttons';
+@import './components/links';
+// Секция хедр
+@import './components/header';
+// Первая секция
+@import './components/herosection';
+// Вторая(зеленая полоска)
+@import './components/advantages';
+// бызовые стили для секций
+@import './components/section-basic';
+// секция наши традиции
+@import './components/traditional-section';
+// секция поваров
+@import './components/chefs-section';
+// секция форматов
+@import './components/formats-section';
+// карусель в секции форматов
+@import './components/chefs-carousele';
+// секция с картой для контакта
+@import './components/contact-section';
+// футер
+@import './components/footer';
+// модальное окно
+@import './components/modal-window';
+// форма
+@import './components/form';
+// стили для контейнера
+@import './components/container';
