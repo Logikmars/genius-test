@@ -156,6 +156,24 @@
                     <div class="contact-form">
                         <h2 class="contact-title section-title">Приєднуйся до мережі пекарень</h2>
                         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+                        <!-- Form -->
+                        <form name="contact-form" autocomplete="off">
+                            <div class="form-field ">
+                                <label class="form-label hidden" for="user-name">Імʼя</label>
+                                <input required class="form-input" type="text" name="user-name" id="user-name" placeholder="Імʼя"/>
+                            </div>
+                            <div class="form-field ">
+                                <label class="form-label hidden" for="user-name">Телефон</label>
+                                <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Телефон">
+                            </div>
+                            <div class="form-field ">
+                                <label class="form-label hidden" for="user-email">Електронна пошта</label>
+                                <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електронна пошта">
+                            </div>
+                            <button class="form-button button" type="submit">Замовити дзвінок</button>
+                            <p class="form-terms">Натичкаючи кнопку я погоджуюсь з <a href="#" class="form-terms-link">політикою
+                                    конфіденційності </a></p>
+                        </form>
                     </div>
                 <iframe
                     class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1731514657420!5m2!1suk!2sua"
@@ -207,9 +225,27 @@
       </div>
     </footer>
     <!-- Modal -->
-     <div class="backdrop is-hidden">
+     <div class="backdrop">
         <div class="modal">
             <button class="modal-btn-close" type="button">Close</button>
+            <h2>Замовити дзвінок</h2>
+            <p>Залишіть заявку та наш спеціаліст звʼяжется з Вами! </p>
+            <form name="modal-form" autocomplete="off">
+                <div class="form-field ">
+                    <label class="form-label hidden" for="user-name">Імʼя</label>
+                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Імʼя" minlength="2" maxlength="20" required>
+                </div>
+                <div class="form-field ">
+                    <label class="form-label hidden" for="user-name">Телефон</label>
+                    <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Телефон" pattern="^\+[0,9]{12}" required>
+                </div>
+                <div class="form-field ">
+                    <label class="form-label hidden" for="user-email">Електронна пошта</label>
+                    <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електронна пошта" required>
+                </div>
+                <button class="form-button button" type="submit">Замовити дзвінок</button>
+                 <p class="form-terms">Натичкаючи кнопку я погоджуюсь з <a href="#" class="form-terms-link">політикою конфіденційності </a></p>
+            </form>
         </div>
      </div>
      <script src="js/main.js"></script>
