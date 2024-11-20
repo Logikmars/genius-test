@@ -2,7 +2,6 @@
 @import './utils/variables';
 @import './base';
 // утилиты(кнопки и тд)
-@import './utils/utils';
 @import './components/buttons';
 @import './components/links';
 // Секция хедр
@@ -17,6 +16,7 @@
 @import './components/traditional-section';
 // секция поваров
 @import './components/chefs-section';
+@import './components/chef-card';
 // секция форматов
 @import './components/formats-section';
 // карусель в секции форматов
@@ -31,3 +31,9 @@
 @import './components/form';
 // стили для контейнера
 @import './components/container';
+// Брендовый цвет для текста
+@import './utils/texts';
+
+@import './utils/utils';
+// Mobile menu
+@import './components/mobile-menu';

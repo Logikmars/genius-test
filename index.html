@@ -15,77 +15,83 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-container">
-                <nav class="header-nav">
+            <div class="header__container">
+                <nav class="header__nav">
                     <a href="index.html">
                         <img src="images/logo.svg" alt="Логотип сучасної пекарні">
                     </a>
-                    <ul class="header-menu">
+                    <ul class="header__menu">
                         <li><a class="link" href="#traditions-section">Наші традиції</a></li>
                         <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
                         <li><a class="link" href="#format-section">Формати</a></li>
                         <li><a class="link" href="#contact-section">Контакти</a></li>
                     </ul>
                 </nav>
-                <!-- button -->
-                <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
+                <button class="header__button button modal-btn-open" type="button">Замовити дзвінок</button>
+                <button class="header__burger menu-btn-open" type="button">
+                    <img src="images/menu.svg" alt="burger menu">
+                </button>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <section class="hero-section">
             <div class="container">
-                <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
+                <h1 class="hero-section__title"><span class="text-brand">Сучасна</span> пекарня</h1>
+                <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button>
             </div>
         </section>
         <section class="advantages-section">
             <div class="container">
                 <h2 class="hidden">Наші переваги</h2>
-                <ul class="advantages-list">
-                    <li class="advantages-item">Великий попит на ринку</li>
-                    <li class="advantages-item">Доступні за бюджетом формати</li>
-                    <li class="advantages-item">Досвідчена управлінська команда</li>
+                <ul class="advantages-section__list">
+                    <li class="advantages-section__item">Великий попит на ринку</li>
+                    <li class="advantages-section__item">Доступні за бюджетом формати</li>
+                    <li class="advantages-section__item">Досвідчена управлінська команда</li>
                 </ul>
             </div>
         </section>
         <section class="traditions-section section" id="traditions-section">
             <div class="container">
-                <div class="traditions-container">
-                    <div class="traditions-content">
-                        <h2 class="traditions-title section-title">Новий формат традицій</h2>
-                    <p class="traditions-text"><span class="brand uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і
+                <div class="traditions-section__container">
+                    <div class="traditions-section__content">
+                        <h2 class="traditions-section__title section-title">Новий формат традицій</h2>
+                    <p><span class="text-brand uppercase">shop bakery</span> — це пекарня, яка взяла все найкраще, і
                         зберегла смак традиційної випічки та натуральність інгредієнтів.</p>
-                    <p class="traditions-text limited">Ми працюємо як найвідоміші мережі—
-                        <span class="brand">5 хвилин і замовлення готове</span>.
+                    <p class="traditions-section__text traditions-section__text--limited">Ми працюємо як найвідоміші мережі —
+                        <span class="text-brand">5 хвилин і замовлення готове</span>.
                         А ще у наших пекарень стильний дизайн
                         та висока якість обслуговування!
                     </p>
                     </div>
-                    <img src="images/backerman.jpg" alt="пекар сучасної пекарні">
+                    <img class="traditions-section__image" srcset="./images/backerman.jpg 1x, ./images/backerman@2x.jpg 2x" src="images/backerman.jpg" alt="пекар сучасної пекарні">
                 </div>
             </div>
         </section>
         <!-- chefs -->
-        <section class="section" id="chefs-section">
+        <!-- <section class="chefs-section section" id="chefs-section">
             <div class="container">
-                <h2 class="chefs-title section-title centered">Наші найкращі <br> <span class="accent">шеф-кухарі</span></h2>
-                <ul class="chefs-list">
-                    <li class="chefs-item"> 
+                <h2 class="chefs-section__title section__title section__title--centered">Наші найкращі <br> <span class="accent">шеф-кухарі</span></h2>
+                <ul class="chefs-section__list">
+                    <li class="chefs-section__item"> 
                         <article class="chef-card">
-                            <img class="chef-image" src="images/Nastya.jpg" alt="Наш найкращий шеф-кухар Настя">
+                            <img class="chef-card__image" src="images/Nastya.jpg" alt="Наш найкращий шеф-кухар Настя">
                             <div>
-                                <h3 class="chef-title">Настя</h3>
+                                <h3 class="chef-card__title">Настя</h3>
                                 <p class="chef-text">Привіт, я Настя!</p>
                                 <p class="chef-text">Вже 10 років, я втілюю <br> у життя цікаві та смачні ідеї.</p>
                                 <p class="chef-text">Я випічу для вас <br> найсмачніщі вироби!</p>
                             </div>
                         </article>
                     </li>
-                    <li class="chefs-item"> 
+                    <li class="chefs-section__item"> 
                         <article class="chef-card">
-                            <img class="chef-image" src="images/Vlad.jpg" alt="Наш найкращий шеф-кухар Влад">
+                            <img class="chef-card__image" src="images/Vlad.jpg" alt="Наш найкращий шеф-кухар Влад">
                             <div>
-                                <h3 class="chef-title">Влад</h3>
+                                <h3 class="chef-card__title">Влад</h3>
                                 <p class="chef-text">Привіт, я Влад!</p>
                                 <p class="chef-text">Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами
                                     через нашу випічку!</p>
@@ -95,19 +101,19 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- formats -->
-        <section class="section" id="format-section">
+        <!-- <section class="format-section section" id="format-section">
             <div class="container">
-                <h2 class="format-section-title section-title centered">Формати</h2>
-                <div class="formats-container">
+                <h2 class="format-section__title section__title section__title--centered">Формати</h2>
+                <div class="format-section__container">
                     <button class="carousele-button" type="button">
                         <svg class="carousele-arrow" width="16" height="16">
                             <use href="./images/icons.svg#icon-arrow"></use>
                         </svg>
                     </button>
-                    <ul class="formats-list">
-                        <li class="formats-item">
+                    <ul class="format-section__list">
+                        <li class="format-section__item">
                             <article class="format">
                                 <img class="format-image" src="./images/Walrus.jpg" alt="Walrus format">
                                 <h3 class="format-title" lang="en">Walrus</h3>
@@ -119,7 +125,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="formats-item">
+                        <li class="format-section__item">
                             <article class="format">
                                 <img class="format-image" src="./images/Horseshoe.jpg" alt="Walrus format">
                                 <h3 class="format-title" lang="en">Horseshoe</h3>
@@ -131,7 +137,7 @@
                                 </div>
                             </article>
                         </li>
-                        <li class="formats-item">
+                        <li class="format-section__item">
                             <article class="format">
                                 <img class="format-image" src="./images/Handlebar.jpg" alt="Walrus format">
                                 <h3 class="format-title" lang="en">Handlebar</h3>
@@ -151,15 +157,14 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Contact -->
-        <section class="section contact-section" id="contact-section">
+        <!-- <section class="section contact-section" id="contact-section">
             <div class="container">
-                <div class="contact-container">
-                    <div class="contact-form">
+                <div class="contact-section__container">
+                    <div class="contact-section__form">
                         <h2 class="contact-title section-title">Приєднуйся до мережі пекарень</h2>
                         <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-                        <!-- Form -->
                         <form name="contact-form" autocomplete="off">
                             <div class="form-field ">
                                 <label class="form-label hidden" for="user-name">Імʼя</label>
@@ -179,14 +184,14 @@
                         </form>
                     </div>
                 <iframe
-                    class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1731514657420!5m2!1suk!2sua"
+                    class="contact-section__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1731514657420!5m2!1suk!2sua"
                     width="603" height="595" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-container">
             <nav class="footer-nav">
@@ -226,7 +231,7 @@
             </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- Modal -->
      <div class="backdrop hidden">
         <div class="modal">
@@ -251,6 +256,7 @@
             </form>
         </div>
      </div>
+     <script src="js/mobile-menu.js"></script>
      <script src="js/main.js"></script>
 </body>
 </html>
