@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet">
     <!-- style -->
     <link rel="stylesheet" href="css/main.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header class="header">
@@ -72,7 +76,7 @@
             </div>
         </section>
         <!-- chefs -->
-        <!-- <section class="chefs-section section" id="chefs-section">
+        <section class="chefs-section section" id="chefs-section">
             <div class="container">
                 <h2 class="chefs-section__title section__title section__title--centered">Наші найкращі <br> <span class="accent">шеф-кухарі</span></h2>
                 <ul class="chefs-section__list">
@@ -101,55 +105,57 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- formats -->
-        <!-- <section class="format-section section" id="format-section">
+        <section class="format-section section" id="format-section">
             <div class="container">
                 <h2 class="format-section__title section__title section__title--centered">Формати</h2>
-                <div class="format-section__container">
-                    <button class="carousele-button" type="button">
+                <div class="format-section__slider">
+                    <button class="carousele-button prev" type="button">
                         <svg class="carousele-arrow" width="16" height="16">
                             <use href="./images/icons.svg#icon-arrow"></use>
                         </svg>
                     </button>
-                    <ul class="format-section__list">
-                        <li class="format-section__item">
-                            <article class="format">
-                                <img class="format-image" src="./images/Walrus.jpg" alt="Walrus format">
-                                <h3 class="format-title" lang="en">Walrus</h3>
-                                <div class="format-text">
-                                    <p>Площа: до 120 м2</p>
-                                    <p>Меню: розширене меню</p>
-                                    <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
-                                    <p>Посадкові місця: є</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="format-section__item">
-                            <article class="format">
-                                <img class="format-image" src="./images/Horseshoe.jpg" alt="Walrus format">
-                                <h3 class="format-title" lang="en">Horseshoe</h3>
-                                <div class="format-text">
-                                    <p>Площа: до 120 м2</p>
-                                    <p>Меню: розширене меню</p>
-                                    <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
-                                    <p>Посадкові місця: є</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="format-section__item">
-                            <article class="format">
-                                <img class="format-image" src="./images/Handlebar.jpg" alt="Walrus format">
-                                <h3 class="format-title" lang="en">Handlebar</h3>
-                                <div class="format-text">
-                                    <p>Площа: до 120 м2</p>
-                                    <p>Меню: розширене меню</p>
-                                    <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
-                                    <p>Посадкові місця: є</p>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
+                    <div class="swiper-container">
+                        <ul class="format-section__list swiper-wrapper">
+                            <li class="format-section__item swiper-slide">
+                                <article class="format">
+                                    <img class="format-image" src="./images/Walrus.jpg" alt="Walrus format">
+                                    <h3 class="format-title" lang="en">Walrus</h3>
+                                    <div class="format-text">
+                                        <p>Площа: до 120 м2</p>
+                                        <p>Меню: розширене меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                        <p>Посадкові місця: є</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="format-section__item swiper-slide">
+                                <article class="format">
+                                    <img class="format-image" src="./images/Horseshoe.jpg" alt="Walrus format">
+                                    <h3 class="format-title" lang="en">Horseshoe</h3>
+                                    <div class="format-text">
+                                        <p>Площа: до 120 м2</p>
+                                        <p>Меню: розширене меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                        <p>Посадкові місця: є</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="format-section__item swiper-slide">
+                                <article class="format">
+                                    <img class="format-image" src="./images/Handlebar.jpg" alt="Walrus format">
+                                    <h3 class="format-title" lang="en">Handlebar</h3>
+                                    <div class="format-text">
+                                        <p>Площа: до 120 м2</p>
+                                        <p>Меню: розширене меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                        <p>Посадкові місця: є</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
                     <button class="carousele-button next" type="button">
                         <svg class="carousele-arrow" width="16" height="16">
                             <use href="./images/icons.svg#icon-arrow"></use>
@@ -157,7 +163,7 @@
                     </button>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Contact -->
         <!-- <section class="section contact-section" id="contact-section">
             <div class="container">
@@ -258,5 +264,6 @@
      </div>
      <script src="js/mobile-menu.js"></script>
      <script src="js/main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
